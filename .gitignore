@@ -1,0 +1,62 @@
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.pdf
+*.dvi
+*.bbl
+*.blg
+
+# Build and temporary files
+/_build/
+/_minted-*/
+
+# Docker
+.dockerignore
+Dockerfile
+.dockerignore
+
+# Docker Compose
+docker-compose.yml
+docker-compose.yaml
+
+# Docker artifacts
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tgz
+*.tbz
+*.tbz2
+*.taz
+*.tz2
+*.txz
+*.zip
+*.7z
+*.rar
+
+# Ignore generated containers and images
+*.bak
+*.swp
+*.swo
+*.pyc
+*.pyo
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore local development environment files
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?

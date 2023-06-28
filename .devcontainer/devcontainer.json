@@ -1,0 +1,43 @@
+{
+	"name": "Ubuntu",
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'VARIANT' to pick an Ubuntu version: jammy / ubuntu-22.04, focal / ubuntu-20.04, bionic /ubuntu-18.04
+		// Use ubuntu-22.04 or ubuntu-18.04 on local arm64/Apple Silicon.
+		"args": {
+			"VARIANT": "focal"
+		}
+	},
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				// Format on save
+				"editor.formatOnSave": true,
+				// Grammarly academic writing style
+				"grammarly.domain": "academic",
+				// always open pdf preview in new vscode tab
+				"latex-workshop.view.pdf.viewer": "tab",
+				"latex-workshop.latex.outDir": "./../out",
+				"latex-workshop.synctex.afterBuild.enabled": true,
+				"latex-workshop.latex.autoBuild.run": "onSave"
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"james-yu.latex-workshop",
+				"VisualStudioExptTeam.vscodeintellicode"
+			]
+		}
+	},
+	// "mounts": [
+	//     "source=${localEnv:HOME}${localEnv:USERPROFILE}/.gitconfig,target=~/.gitconfig,type=bind,consistency=cached"
+	// ],
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
+}

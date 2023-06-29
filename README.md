@@ -8,8 +8,8 @@ dolatex is a tool that combines the convenience of Docker & LaTeX with Visual St
 
 ## Getting Started
 ### Windows
-+ Install [Docker Desktop][https://www.docker.com/products/docker-desktop/] on your system.
-+ Install [Visual Studio Code][https://code.visualstudio.com/] on your system.
++ Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) on your system.
++ Install [Visual Studio Code](https://code.visualstudio.com/) on your system.
 + Install the following Visual Studio Code Extensions
   + Docker (ms-azuretools.vscode-docker)
   + Dev Container (ms-vscode-remote.remote-containers)

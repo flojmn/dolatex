@@ -8,6 +8,8 @@
 *.dvi
 *.bbl
 *.blg
+*.fdb_latexmk
+*.fls
 
 # Build and temporary files
 /_build/
